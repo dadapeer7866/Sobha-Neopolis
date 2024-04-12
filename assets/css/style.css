@@ -83,6 +83,14 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
   }
   
+  .btn-width {
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-width:hover {
+    transform: scale(0.9);
+  }
+  
  
 
   
