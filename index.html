@@ -858,6 +858,24 @@
          
          <!-- Initialize intl-tel-input on all phone input fields -->
 
-   
+         <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelectorAll('.nav-item .nav-link').forEach(item => {
+                    item.addEventListener('click', function() {
+                        // Remove active class from all items
+                        document.querySelectorAll('.nav-item .nav-link').forEach(innerItem => {
+                            innerItem.classList.remove('active');
+                            innerItem.style.backgroundColor = "";
+                            innerItem.style.color = "";
+                        });
+            
+                        // Add active class to clicked item
+                        this.classList.add('active');
+                        this.style.backgroundColor = "#213e7a";
+                        this.style.color = "#ffffff";
+                    });
+                });
+            });
+            </script>   
 </body>
 </html>
